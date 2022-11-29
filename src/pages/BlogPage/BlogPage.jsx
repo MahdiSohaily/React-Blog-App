@@ -14,9 +14,13 @@ export default function BlogPage() {
   }, []);
 
   const data =
-    cards.length > 0
-      ? cards.map((card) => <Card key={card.id} post={card} />)
-      : null;
+    cards.length > 0 ? (
+      cards.map((card) => <Card key={card.id} post={card} />)
+    ) : (
+      <div className="loader">
+        <img src="assets/spinner.gif" alt="loader icon" />
+      </div>
+    );
 
   return (
     <Layout>

@@ -7,3 +7,15 @@
   grid-template-rows: auto;
   grid-gap: 20px;
 }
+
+.loader {
+  display: flex;
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-inline: auto;
+  justify-content: center;
+  align-items: center;
+}

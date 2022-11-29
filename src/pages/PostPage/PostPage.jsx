@@ -15,12 +15,18 @@ export default function PostPage({ id }) {
 
   return (
     <Layout>
-      <div className="container">
-        <h1>{post.title}</h1>
-        <img src={post.image} alt={post.title} />
-        <p>{post.summary}</p>
-        {post && <Comments id={post.id} />}
-      </div>
+      {post ? (
+        <div className="container">
+          <h1>{post.title}</h1>
+          <img src={post.image} alt={post.title} />
+          <p>{post.summary}</p>
+          {post && <Comments id={post.id} />}
+        </div>
+      ) : (
+        <div className="loader">
+          <img src="assets/spinner.gif" alt="loader icon" />
+        </div>
+      )}
     </Layout>
   );
 }

@@ -18,7 +18,7 @@ export default function BlogPage() {
       cards.map((card) => <Card key={card.id} post={card} />)
     ) : (
       <div className="loader">
-        <img src="assets/spinner.gif" alt="loader icon" />
+        <img src="./assets/spinner.gif" alt="loader icon" />
       </div>
     );
 

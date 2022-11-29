@@ -1,14 +1,21 @@
 import { useState, useEffect } from 'react';
 import Layout from '../../components/Layout';
-import loadPost from './losdPost';
+import loadPost from './loadPost';
 
 export default function PostPage({ id }) {
   const [post, setPost] = useState('');
 
   useEffect(() => {
     loadPost(id).then((response) => {
-      console.log(response.data);
+      setPost(response.data);
     });
   }, [id]);
-  return <Layout>PostPage</Layout>;
+
+  return (
+    <Layout>
+      <h1>{post.title}</h1>
+      <img src={post.image} alt={post.title} />
+      <p>{post.summary}</p>
+    </Layout>
+  );
 }

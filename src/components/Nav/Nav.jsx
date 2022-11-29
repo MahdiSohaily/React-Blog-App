@@ -1,3 +1,4 @@
+import { A } from 'hookrouter';
 import './style.css';
 
 export default function Nav() {
@@ -5,16 +6,16 @@ export default function Nav() {
     <nav>
       <ul>
         <li>
-          <a href="/">Home Page</a>
+          <A href="/">Home Page</A>
         </li>
         <li>
-          <a href="/blog">Blog</a>
+          <A href="/blog">Blog</A>
         </li>
         <li>
-          <a href="/contact">Contact Us</a>
+          <A href="/contact">Contact Us</A>
         </li>
         <li>
-          <a href="/about">About Us</a>
+          <A href="/about">About Us</A>
         </li>
       </ul>
     </nav>

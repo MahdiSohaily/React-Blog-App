@@ -12,7 +12,11 @@ export default function Card({ post }) {
         ></div>
         <article>
           <h1>{post.title}</h1>
-          <p>{post.summary}</p>
+          <p>
+            {post.summary.substring(0, 200)}...
+            <br />
+            <span className="read-more">Read More...</span>
+          </p>
           <span>{post.author}</span>
         </article>
       </a>

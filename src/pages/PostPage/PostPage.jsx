@@ -17,8 +17,8 @@ export default function PostPage({ id }) {
     <Layout>
       {post ? (
         <div className="container">
-          <h1>{post.title}</h1>
           <img src={post.image} alt={post.title} />
+          <h1 className='text-center'>{post.title}</h1>
           <p>{post.summary}</p>
           {post && <Comments id={post.id} />}
         </div>

@@ -1,11 +1,12 @@
 .container {
-  width: 90%;
+  width: 80%;
   max-width: 1240px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-gap: 20px;
+  background-color: aqua;
 }
 
 .loader {
@@ -18,4 +19,8 @@
   margin-inline: auto;
   justify-content: center;
   align-items: center;
+}
+
+.text-center {
+  text-align: center;
 }

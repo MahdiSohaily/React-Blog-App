@@ -19,6 +19,6 @@ class httpClient {
   }
 }
 
-const http = new httpClient();
+const https = new httpClient();
 
-export default http;
+export default https;

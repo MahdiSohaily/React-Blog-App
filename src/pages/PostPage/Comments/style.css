@@ -3,5 +3,10 @@
   border-radius: 0.5rem;
   border-left: 10px solid skyblue;
   padding: 1rem;
+  margin-top: 2rem;
   min-height: 20vh;
+}
+
+.comments-list {
+  padding: 1rem;
 }

@@ -1,19 +1,19 @@
 .main-nav {
-    width: 90%;
-    max-width: 1240px;
-    margin: 0 auto;
-    border-radius: 5px;
-    display: flex;
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding-block: 1rem;
 }
 
 nav ul,
 nav li {
-    list-style-type: none;
-    display: inline-block;
+  list-style-type: none;
+  display: inline-block;
 }
 
 nav li {
-    padding: 10px;
+  padding: 10px 10px 10px 0;
 }
 
 nav a,
@@ -21,6 +21,11 @@ a:hover,
 a:active,
 a:visited,
 a:focus {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a {
+  font-weight: bold;
+  letter-spacing: 1px;
 }

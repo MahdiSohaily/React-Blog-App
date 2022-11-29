@@ -19,7 +19,7 @@ export default function Comments({ id }) {
   return (
     <div className="comments-container">
       <h2>Comments:</h2>
-      <ul>{data}</ul>
+      <ul className="comments-list">{data}</ul>
     </div>
   );
 }

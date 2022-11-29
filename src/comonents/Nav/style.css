@@ -1,0 +1,26 @@
+nav {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+nav ul,
+nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
+    color: #333;
+}

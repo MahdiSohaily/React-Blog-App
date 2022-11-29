@@ -5,9 +5,15 @@ export default function Comments({ id }) {
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
-    loadComments().then((response) => {
-      setComments(response.data);
+    loadComments(id).then(({ data }) => {
+      setComments(data);
     });
   }, [id]);
-  return <div>{comments}</div>;
+  const data = comments ? (
+    comments.map((comment) => <li key={comment.id}>{comment.summary}</li>)
+  ) : (
+    <li>Nothing to show</li>
+  );
+
+  return <div>{data}</div>;
 }

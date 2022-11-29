@@ -1,7 +1,8 @@
-import HomePage from "./pages/HomePage";
+import { useRoutes } from 'hookrouter';
+import routes from './routes/route';
+import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
-  return (
-    <HomePage />
-  )
+  const match = useRoutes(routes);
+  return match || <NotFoundPage />;
 }

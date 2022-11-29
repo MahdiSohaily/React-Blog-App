@@ -12,7 +12,7 @@ export default function Comments({ id }) {
   const data = comments ? (
     comments.map((comment) => <li key={comment.id}>{comment.summary}</li>)
   ) : (
-    <li>Nothing to show</li>
+    <li>There is no comments for this post</li>
   );
 
   return <div>{data}</div>;

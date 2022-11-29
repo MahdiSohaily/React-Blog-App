@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import loadComments from './loadComments';
+import './style.css';
 
 export default function Comments({ id }) {
   const [comments, setComments] = useState([]);
@@ -15,5 +16,10 @@ export default function Comments({ id }) {
     <li>There is no comments for this post</li>
   );
 
-  return <div>{data}</div>;
+  return (
+    <div className="comments-container">
+      <h2>Comments:</h2>
+      <ul>{data}</ul>
+    </div>
+  );
 }

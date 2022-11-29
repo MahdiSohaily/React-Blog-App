@@ -1,8 +1,9 @@
-nav {
+.main-nav {
     width: 90%;
     max-width: 1240px;
     margin: 0 auto;
     border-radius: 5px;
+    display: flex;
 }
 
 nav ul,

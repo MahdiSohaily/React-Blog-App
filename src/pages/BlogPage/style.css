@@ -26,11 +26,6 @@ header {
   align-items: center;
 }
 
-img {
-  display: block;
-  margin-inline: auto;
-}
-
 @media (min-width: 30em) {
   .band {
     grid-template-columns: 1fr 1fr;

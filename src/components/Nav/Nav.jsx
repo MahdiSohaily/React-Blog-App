@@ -3,7 +3,7 @@ import './style.css';
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className="main-nav">
       <img src={`${process.env.PUBLIC_URL}logo.png`} alt="logo" />
       <ul>
         <li>

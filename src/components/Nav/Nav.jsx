@@ -4,9 +4,10 @@ import './style.css';
 export default function Nav() {
   return (
     <nav>
+      <img src={`${process.env.PUBLIC_URL}logo.png`} alt="logo" />
       <ul>
         <li>
-          <A href="/">Home Page</A>
+          <A href="/">Home</A>
         </li>
         <li>
           <A href="/blog">Blog</A>

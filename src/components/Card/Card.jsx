@@ -1,22 +1,19 @@
 import './style.css';
 
-export default function Card() {
+export default function Card({ post }) {
   return (
-    <div className="item-1">
-      <a
-        href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852"
-        className="card"
-      >
+    <div className={`item-${post.id}`}>
+      <a href={`post/${post.id}`} className="card">
         <div
           className="thumb"
           style={{
-            backgroundImage:
-              'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg)',
+            backgroundImage: `url(${post.image})`,
           }}
         ></div>
         <article>
-          <h1>International Artist Feature: Malaysia</h1>
-          <span>Mary Winkler</span>
+          <h1>{post.title}</h1>
+          <p>{post.summary}</p>
+          <span>{post.author}</span>
         </article>
       </a>
     </div>

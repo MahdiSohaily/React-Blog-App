@@ -1,7 +1,14 @@
+import { useState, useEffect } from 'react';
+import https from '../'
 import Layout from '../../components/Layout';
 import './style.css';
 
 export default function BlogPage() {
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+  }, []);
+
   return (
     <Layout>
       <header>
